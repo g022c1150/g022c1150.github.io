@@ -1,3 +1,7 @@
+body {
+  background-color: lightyellow;
+}
+
 nav {
   background-color: #333;
   padding: 10px;
@@ -13,7 +17,7 @@ ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 a {
@@ -46,23 +50,163 @@ a:hover {
   z-index: -1;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* 20px下に移動する */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* 元の位置に戻る */
-  }
-}
-
 .content {
-  animation: fadeIn 1s ease-in-out; /* フェードインのアニメーションを適用 */
   margin-top: 100px;
   padding: 20px;
 }
 
-.animate {
-  animation: fadeIn 1s ease-in-out;
+.fade-in-text{
+  animation-name:fadeInAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  animation-delay: 1s;
+  opacity:0;
+}
+  
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    top: 0; /* 上部に固定 */
+    left: 0;
+    right: 0;
+    border-radius: 0; /* 丸みを削除 */
+  }
+
+  .nav-menu {
+    justify-content: space-between; /* ナビゲーション項目の配置を調整 */
+  }
+
+  .logo {
+    margin-left: 10px; /* ロゴのマージンを調整 */
+    height: 30px; /* ロゴの高さを小さく */
+    width: auto; /* 幅は自動調整されるように */
+  }
+
+  /* 他の要素のスタイルも調整 */
+}
+
+div.animation_box {
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+h1 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+h1:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #000;
+}
+
+h1 span {
+  position: relative;
+  padding: 0 1em;
+  background: lightyellow;
+}
+
+div.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.enclosure {
+  border: 3px solid blue;
+  border-radius: 20px;
+  background-color: lightblue;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 0px;
+}
+
+.enclosure p {
+  margin: 0px 10px;
+  padding: 0px;
+}
+
+.enclosure img {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+div.card {
+  width: 288px;
+  height: auto;
+  margin-right: 70px;
+  border: 2px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+
+  opacity: 0;
+  transform: translateX(30px);
+  transition: 1s ease; 
+}
+
+div.change-time03 {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: 1s ease; 
+  transition-delay: 0.3s;
+}
+
+div.change-time06 {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: 1s ease; 
+  transition-delay: 0.6s;
+}
+
+div.card:last-child {
+  margin-right: 0;
+}
+
+div.card-img {
+  width: 100%;
+  height: auto;
+  background: #bbb;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+div.card-textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+div.card-title {
+  font-size: 20px;
+  line-height: 125%;
+  font-weight: bold;
+}
+
+div.card-text {
+  font-size: 12px;
+  line-height: 150%;
+  padding-top: 10px;
 }
