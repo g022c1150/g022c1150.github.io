@@ -130,6 +130,12 @@ div.flex {
   justify-content: center;
 }
 
+.flexcard {
+  display: flex;
+  justify-content: center;
+  margin: 0em 3em;
+}
+
 .enclosure {
   border: 3px solid blue;
   border-radius: 20px;
@@ -151,6 +157,7 @@ div.flex {
 }
 
 div.card {
+  background-color: white;
   width: 288px;
   height: auto;
   margin-right: 70px;
