@@ -130,7 +130,7 @@ div.flex {
   justify-content: center;
 }
 
-.flexcard {
+div.flexcard {
   display: flex;
   justify-content: center;
   margin: 0em 3em;
