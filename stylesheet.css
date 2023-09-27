@@ -73,26 +73,7 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  nav {
-    top: 0; /* 上部に固定 */
-    left: 0;
-    right: 0;
-    border-radius: 0; /* 丸みを削除 */
-  }
 
-  .nav-menu {
-    justify-content: space-between; /* ナビゲーション項目の配置を調整 */
-  }
-
-  .logo {
-    margin-left: 10px; /* ロゴのマージンを調整 */
-    height: 30px; /* ロゴの高さを小さく */
-    width: auto; /* 幅は自動調整されるように */
-  }
-
-  /* 他の要素のスタイルも調整 */
-}
 
 div.animation_box {
   padding: 10px;
