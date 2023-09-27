@@ -125,6 +125,12 @@ h1 span {
   background: lightyellow;
 }
 
+h2 {
+  border-left: 7px solid blue;
+  margin: 10px;
+  padding-left: 10px;
+}
+
 div.flex {
   display: flex;
   justify-content: center;
@@ -144,6 +150,8 @@ div.flex {
   margin-left: 5em;
   margin-right: 5em;
   padding: 0px;
+  align-items: center;
+  overflow: hidden;
 }
 
 .enclosure p {
@@ -154,7 +162,35 @@ div.flex {
 .enclosure img {
   border: 3px solid black;
   border-radius: 20px;
-  
+  max-height: 100%;
+}
+
+.enclosure-pink {
+  border: 3px solid red;
+  border-radius: 20px;
+  background-color: pink;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 0px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.enclosure-pink p {
+  margin: 0px 10px;
+  padding: 0px;
+}
+
+.enclosure-pink img {
+  border: 3px solid black;
+  border-radius: 20px;
+  max-height: 100%;
+}
+.enclosure-pink h2 {
+  border-left: 7px solid red;
+  margin: 10px;
+  padding-left: 10px;
 }
 
 div.card {
