@@ -50,6 +50,17 @@ a:hover {
   z-index: -1;
 }
 
+.centered-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainContent {
+  margin-top: 0; /* 初期値を0に設定 */
+}
+
 .content {
   margin-top: 100px;
   padding: 20px;
