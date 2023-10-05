@@ -58,7 +58,7 @@ a:hover {
 }
 
 .mainContent {
-  margin-top: 0; /* 初期値を0に設定 */
+  margin-top: 0;
 }
 
 .content {
@@ -126,6 +126,11 @@ h2 {
 div.flex {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.flex img {
+  align-self: flex-start;
 }
 
 .flexcard {
@@ -245,4 +250,27 @@ div.card-text {
   font-size: 12px;
   line-height: 150%;
   padding-top: 10px;
+}
+
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 30px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0.8;
+}
+
+#topButton i {
+  font-size: 23px;
+  vertical-align: middle;
 }
