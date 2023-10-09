@@ -1,5 +1,6 @@
 body {
   background-color: lightyellow;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav {
@@ -84,8 +85,6 @@ a:hover {
   }
 }
 
-
-
 div.animation_box {
   padding: 10px;
   opacity: 0;
@@ -121,6 +120,7 @@ h2 {
   border-left: 7px solid blue;
   margin: 10px;
   padding-left: 10px;
+  font-family: "Arial", sans-serif;
 }
 
 div.flex {
@@ -154,6 +154,7 @@ div.flex {
 .enclosure p {
   margin: 0px 10px;
   padding: 0px;
+  font-family: "Arial", sans-serif;
 }
 
 .enclosure img {
@@ -188,6 +189,7 @@ div.flex {
   border-left: 7px solid red;
   margin: 10px;
   padding-left: 10px;
+  font-family: "Arial", sans-serif;
 }
 
 div.card {
@@ -250,6 +252,7 @@ div.card-text {
   font-size: 12px;
   line-height: 150%;
   padding-top: 10px;
+  font-family: "Arial", sans-serif;
 }
 
 #topButton {
